@@ -12,9 +12,12 @@
 		264DB12A2BD3C9D200BA1CB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264DB1292BD3C9D200BA1CB7 /* ViewController.swift */; };
 		264DB12F2BD3C9D400BA1CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264DB12E2BD3C9D400BA1CB7 /* Assets.xcassets */; };
 		264DB1322BD3C9D400BA1CB7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 264DB1312BD3C9D400BA1CB7 /* Base */; };
+		CF1EC129E22701A0AAA811B4 /* Pods_AuctionPlates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19434E91416DB63EB0C9B7D5 /* Pods_AuctionPlates.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D491F153E0E0B58CFD5C4E7 /* Pods-AuctionPlates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuctionPlates.debug.xcconfig"; path = "Target Support Files/Pods-AuctionPlates/Pods-AuctionPlates.debug.xcconfig"; sourceTree = "<group>"; };
+		19434E91416DB63EB0C9B7D5 /* Pods_AuctionPlates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuctionPlates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		264DB1222BD3C9D200BA1CB7 /* AuctionPlates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuctionPlates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		264DB1252BD3C9D200BA1CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		264DB1272BD3C9D200BA1CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		264DB12E2BD3C9D400BA1CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		264DB1312BD3C9D400BA1CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		264DB1332BD3C9D400BA1CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDC67EE88DABB64B5001030 /* Pods-AuctionPlates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuctionPlates.release.xcconfig"; path = "Target Support Files/Pods-AuctionPlates/Pods-AuctionPlates.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1EC129E22701A0AAA811B4 /* Pods_AuctionPlates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				264DB1242BD3C9D200BA1CB7 /* AuctionPlates */,
 				264DB1232BD3C9D200BA1CB7 /* Products */,
+				D335C8CFEC3B290D7BB0AA72 /* Pods */,
+				944B4E3699B7477DED9A1F9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = AuctionPlates;
 			sourceTree = "<group>";
 		};
+		944B4E3699B7477DED9A1F9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19434E91416DB63EB0C9B7D5 /* Pods_AuctionPlates.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D335C8CFEC3B290D7BB0AA72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D491F153E0E0B58CFD5C4E7 /* Pods-AuctionPlates.debug.xcconfig */,
+				9DDC67EE88DABB64B5001030 /* Pods-AuctionPlates.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 264DB1362BD3C9D400BA1CB7 /* Build configuration list for PBXNativeTarget "AuctionPlates" */;
 			buildPhases = (
+				6442EEA54E578EBEC0C831BD /* [CP] Check Pods Manifest.lock */,
 				264DB11E2BD3C9D200BA1CB7 /* Sources */,
 				264DB11F2BD3C9D200BA1CB7 /* Frameworks */,
 				264DB1202BD3C9D200BA1CB7 /* Resources */,
+				1CBE850039B6F8AC8F91EF91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +154,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CBE850039B6F8AC8F91EF91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuctionPlates/Pods-AuctionPlates-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuctionPlates/Pods-AuctionPlates-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuctionPlates/Pods-AuctionPlates-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6442EEA54E578EBEC0C831BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuctionPlates-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		264DB11E2BD3C9D200BA1CB7 /* Sources */ = {
@@ -191,7 +259,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -254,7 +322,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,6 +343,7 @@
 		};
 		264DB1372BD3C9D400BA1CB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D491F153E0E0B58CFD5C4E7 /* Pods-AuctionPlates.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		264DB1382BD3C9D400BA1CB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDC67EE88DABB64B5001030 /* Pods-AuctionPlates.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
