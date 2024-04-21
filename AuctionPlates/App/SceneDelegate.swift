@@ -15,7 +15,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = IntroViewController(nibName: nil, bundle: nil)
+        let firstVC = IntroViewController(nibName: nil, bundle: nil)
+        let nav = UINavigationController(rootViewController: firstVC)
+        nav.navigationBar.isHidden = true
+        window.rootViewController = nav
         window.makeKeyAndVisible()
         self.window = window
     }

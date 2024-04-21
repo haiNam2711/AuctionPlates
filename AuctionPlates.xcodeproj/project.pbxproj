@@ -18,6 +18,9 @@
 		265639172BD4D56600ECBC69 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265639162BD4D56600ECBC69 /* Constant.swift */; };
 		2656391A2BD4F34500ECBC69 /* IntroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265639192BD4F34500ECBC69 /* IntroCollectionViewCell.xib */; };
 		2656391B2BD4F34500ECBC69 /* IntroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265639182BD4F34500ECBC69 /* IntroCollectionViewCell.swift */; };
+		265639212BD4F8BF00ECBC69 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265639202BD4F8BF00ECBC69 /* SignInViewController.xib */; };
+		265639222BD4F8BF00ECBC69 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656391F2BD4F8BF00ECBC69 /* SignInViewController.swift */; };
+		265639242BD53C5A00ECBC69 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265639232BD53C5A00ECBC69 /* String+Extension.swift */; };
 		CF1EC129E22701A0AAA811B4 /* Pods_AuctionPlates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19434E91416DB63EB0C9B7D5 /* Pods_AuctionPlates.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		265639162BD4D56600ECBC69 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		265639182BD4F34500ECBC69 /* IntroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCollectionViewCell.swift; sourceTree = "<group>"; };
 		265639192BD4F34500ECBC69 /* IntroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroCollectionViewCell.xib; sourceTree = "<group>"; };
+		2656391F2BD4F8BF00ECBC69 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		265639202BD4F8BF00ECBC69 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		265639232BD53C5A00ECBC69 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9DDC67EE88DABB64B5001030 /* Pods-AuctionPlates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuctionPlates.release.xcconfig"; path = "Target Support Files/Pods-AuctionPlates/Pods-AuctionPlates.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				264DB13E2BD3CEB500BA1CB7 /* IntroView */,
+				2656391E2BD4F8A700ECBC69 /* SignInView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				264DB13F2BD3CF2700BA1CB7 /* IntroViewController.swift */,
+				2656391F2BD4F8BF00ECBC69 /* SignInViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,8 +157,17 @@
 			children = (
 				265639142BD4D31700ECBC69 /* UIView+Extension.swift */,
 				265639162BD4D56600ECBC69 /* Constant.swift */,
+				265639232BD53C5A00ECBC69 /* String+Extension.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2656391E2BD4F8A700ECBC69 /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				265639202BD4F8BF00ECBC69 /* SignInViewController.xib */,
+			);
+			path = SignInView;
 			sourceTree = "<group>";
 		};
 		944B4E3699B7477DED9A1F9B /* Frameworks */ = {
@@ -234,6 +251,7 @@
 				263CE8DD2BD3E0AD00B05E71 /* NunitoSans-Italic.ttf in Resources */,
 				2656391A2BD4F34500ECBC69 /* IntroCollectionViewCell.xib in Resources */,
 				264DB1422BD3CF2700BA1CB7 /* IntroViewController.xib in Resources */,
+				265639212BD4F8BF00ECBC69 /* SignInViewController.xib in Resources */,
 				263CE8DB2BD3DD2100B05E71 /* NunitoSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265639242BD53C5A00ECBC69 /* String+Extension.swift in Sources */,
+				265639222BD4F8BF00ECBC69 /* SignInViewController.swift in Sources */,
 				264DB1262BD3C9D200BA1CB7 /* AppDelegate.swift in Sources */,
 				2656391B2BD4F34500ECBC69 /* IntroCollectionViewCell.swift in Sources */,
 				264DB1282BD3C9D200BA1CB7 /* SceneDelegate.swift in Sources */,

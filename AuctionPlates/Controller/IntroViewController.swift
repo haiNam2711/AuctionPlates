@@ -25,6 +25,7 @@ class IntroViewController: UIViewController {
         introCollectionView.delegate = self
         introCollectionView.isPagingEnabled = true
         introCollectionView.showsHorizontalScrollIndicator = false
+        introCollectionView.contentInsetAdjustmentBehavior = .never
         let nib = UINib(nibName: K.IntroVC.CustomCell, bundle: nil)
         introCollectionView.register(nib, forCellWithReuseIdentifier: K.IntroVC.CustomCell)
     }
@@ -36,6 +37,7 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
+        navigationController?.pushViewController(SignInViewController(nibName: nil, bundle: nil), animated: true)
     }
 }
 
